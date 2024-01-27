@@ -68,7 +68,7 @@ const ImageWithTextOverlay = ({ name, attend_course }) => {
               const dataURL = canvas.toDataURL("image/png");
 
               console.log(dataURL);
-              saveAs(dataURL, "kms_coupon.png");
+              saveAs(dataURL, `${name}.png`);
             }}
           >
             download
