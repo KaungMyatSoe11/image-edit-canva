@@ -2,6 +2,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import bg from "../../../assets/bg5.jpeg";
 import { saveAs } from "file-saver";
+import { Button } from "@/components/ui/button";
 
 const ImageWithTextOverlay = ({ name, attend_course }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -62,7 +63,7 @@ const ImageWithTextOverlay = ({ name, attend_course }) => {
         <p>loading...</p>
       ) : (
         <>
-          <button
+          <Button
             onClick={() => {
               const canvas = canvasRef.current;
               const dataURL = canvas.toDataURL("image/png");
@@ -72,7 +73,7 @@ const ImageWithTextOverlay = ({ name, attend_course }) => {
             }}
           >
             download
-          </button>
+          </Button>
         </>
       )}
     </div>
