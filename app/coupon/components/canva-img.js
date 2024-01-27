@@ -57,7 +57,7 @@ const ImageWithTextOverlay = ({ name, attend_course }) => {
         ref={canvasRef}
         className={`${
           isLoading && "hidden"
-        } w-[40%] shadow-md mx-auto rounded-2xl max-[425px]:w-full object-contain`}
+        } w-[40%] shadow-md mx-auto mb-5 rounded-2xl max-[425px]:w-full object-contain`}
       />
       {isLoading ? (
         <p>loading...</p>
